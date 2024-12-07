@@ -8,9 +8,13 @@ Access sensitive data like flags and create a new user from a protected endpoint
 
 # Tools Used
 Kali Linux
+
 Burpsuite
+
 Html
+
 Json
+
 Curl
 
 # Methodology
