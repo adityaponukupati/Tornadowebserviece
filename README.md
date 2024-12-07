@@ -69,7 +69,9 @@ Firstly make sure to change the ipaddress and your port numbers according to you
 
 Get the status of the Ip Machine to know about it
 
-`curl -X GET "http://94.237.63.109:45919/stats"`
+`curl -X GET "http://94.237.63.109:45919/stats"\
+-b cookie.txt
+`
 
 Run the following command to host index.html file http server.
 
