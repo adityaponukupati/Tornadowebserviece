@@ -1,12 +1,17 @@
 # Tornadowebservice
 
 # Project Overview
+
 The challenge is to exploiting a vulnerable web application called tornado wed service
+
 Inject new credentials via a Cross-Site Request Forgery attack via hosting an html payload on local system .
+
 Log in with the injected credentials.
+
 Access sensitive data like flags and create a new user from a protected endpoint.
 
 # Tools Used
+
 Kali Linux
 
 Burpsuite
@@ -19,28 +24,43 @@ Curl
 
 # Methodology
 Enumerate available endpoints and Get and Post requests on burpsuite:
+
 /get_tornados
+
 /update_tornado
+
 /login
+
 /stats
+
 /report_tornado
 
 # Study endpoint behaviors using tools like:
+
 curl
+
 Burp Suite 
+
 browser developer tools
 
 # Planning the Exploit
 
 Find vulnerabilities to create an actionable exploit.
+
 Vulnerability: Cross-Site Request Forgery
+
 The bot is tricked into executing JavaScript on your hosted page and exploit its authenticated session.
+
 Inject malicious data into the application (kittykat user credentials).
+
 Log in and access the protected /stats endpoint.
 
 # Tasks:
+
 Create a malicious JavaScript payload(index.html) to fetch data from /get_tornados.
+
 Update machine details in /update_tornado with injected credentials.
+
 Host this payload as index.html on a local server or on NGROK Public server if you have the subscription.
 
 # Hosting the exploit and exploiting the vulnerability
